@@ -17,12 +17,12 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnTimer += 1;
+        spawnTimer += Time.deltaTime;
         if ( spawnTimer >= spawnRate ) 
         {
             spawnTimer -= spawnRate;
-            Vector2 spawPos = new Vector2(-2f, Random.Range(0f,.7f));
-            Instantiate(tubo, spawPos, quaternion.identity);
+            Vector2 spawnPos = new Vector2(0f, Random.Range(0f,.7f));
+            Instantiate(tubo, spawnPos, quaternion.identity);
         }
     }
 }
