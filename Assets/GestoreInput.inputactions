@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "GestoreInput",
+    "maps": [
+        {
+            "name": "player",
+            "id": "a8c085e2-c6f9-4347-bf83-704b4ca277fc",
+            "actions": [
+                {
+                    "name": "salta",
+                    "type": "Button",
+                    "id": "14e445b2-fa36-4dc2-9c6f-3a8128ea9e01",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "01b30f12-a388-4c8b-8ed2-f27dadd5864a",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "salta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

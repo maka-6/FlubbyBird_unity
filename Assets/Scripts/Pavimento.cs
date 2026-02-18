@@ -14,7 +14,7 @@ public class Pavimento : MonoBehaviour
     {
         // Transform.Destroy();
         transform.position = new Vector2(transform.position.x - (2f * Time.deltaTime), transform.position.y);
-        if (transform.position.x <= -.5f)
+        if (transform.position.x <= -.5f )
         {
             transform.position = position;
         }

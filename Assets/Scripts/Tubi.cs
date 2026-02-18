@@ -13,10 +13,14 @@ public class Tubi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector2(transform.position.x - (2f * Time.deltaTime), transform.position.y);
-        if (transform.position.x <= -11f)
+        
+        if (transform.position.x <= -11f )
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            transform.position = new Vector2(transform.position.x - (2f * Time.deltaTime), transform.position.y);
         }
     }
 }
